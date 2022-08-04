@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="contato">
+<body id="contato">
   <header class=" header-bg">
     <div class="conteiner header">
       <a class="logo" href="./"><img src="./img/bikcraft.svg" alt="">
@@ -55,26 +55,64 @@
       </section>
       <section class="contato-formulario" aria-label="Formulário">
         <form class="form" action="./contato.html">
-          <label for="Nome">Nome</label>
-          <input type="text" id="Nome" name="Nome" placeholder="seu Nome">
-        </form>
-        <form class="form" action="./contato.html">
+          <div>
+            <label for="Nome">Nome</label>
+            <input type="text" id="Nome" name="Nome" placeholder="seu Nome">
+          </div>      
+        <div>
           <label for="Telefone">Telefone</label>
           <input type="text" id="Telefone" name="Telefone" placeholder="(41) 999-9999">
-        </form>
-        <form class="form" action="./contato.html">
+        </div>
+        <div class="col-2">
           <label for="Email">Email</label>
           <input type="text" id="Email" name="Email" placeholder="contato@email.com">
-        </form>
-        <form class="form" action="./contato.html">
+        </div>
+        <div class="col-2">
           <label for="Mensagem">Mensagem</label>
           <!-- rows="" : quantidades de linhas -->
           <textarea rows="5" id="Mensagem" name="Mensagem" placeholder="O que você precisa?"></textarea>
-          <button class="botao">Enviar Mensagem</button>
+        </div>
+          <button class="botao col-2">Enviar Mensagem</button>
         </form>
       </section>
     </div>
   </main>
+
+  <article class="lojas conteiner">
+    <h2 class="font-1-xxl"> lojas locais<span class="cor-p1">.</span></h2>
+    <div class="lojas-item">
+        <img src="./img/lojas/rj.jpg" alt="mapa marcando o endereco em rua ali perto, 25 - rio de janeiro - rj">
+      <div class="lojas-conteudo">
+        <h3 class="font-1-xl">Rio de Janeiro</h3>
+        <div class="lojas-dados font-2-s cor-8">
+          <p>Rua Ali Perto, 25</p>
+          <p>Rio de janeiro - RJ</p>
+        </div>
+        <div class="lojas-dados font-2-s cor-8">
+          <a href="mailto:rj@assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+          <a href="tel:+55219999-9999">+55 21 9999-9999</a>
+        </div>
+        <p class="lojas-tempo font-1-s"> <img src="./img/icones/horario.svg" alt=""> 08-18h de seg à dom</p>
+      </div>
+    </div>
+
+     <div class="lojas-item">
+       <img src="./img/lojas/sp.jpg" alt="mapa marcando o endereco em rua ali perto, 25 - rio de janeiro - rj">
+      <div class="lojas-conteudo">
+          <h3 class="font-1-xl">São Paulo</h3>
+        <div class="lojas-dados font-2-s cor-8">
+          <p>Rua Ali Perto, 25</p>      
+          <p> São Paulo - SP</p>
+        </div>
+        <div class="lojas-dados font-2-s cor-8">
+          <a href="mailto:sp@assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+          <a href="tel:+55119999-9999">+55 11 9999-9999</a>
+        </div>
+        <p class="lojas-tempo font-1-s"> <img src="./img/icones/horario.svg" alt=""> 08-18h de seg à dom</p>
+      </div>
+    </div>
+  
+  </article>
 
 
   <footer class="footer-bg">
